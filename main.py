@@ -1,11 +1,7 @@
-# This is a sample Python script.
 
-# Press Maj+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 import pyodbc
 
 
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     conn = pyodbc.connect('Driver={SQL Server};Server=DESKTOP-0G5VHDF\SQLEXPRESS;Database=WideWorldImporters-Full;Trusted_Connection=yes;')
     req_avant_transaction = "select top 10 StockItemID, StockItemName, UnitPrice, MarketingComments from Warehouse.StockItems"
